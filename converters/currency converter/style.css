@@ -3,10 +3,40 @@
     padding: 0px;
 }
 body{
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    /* flex-direction: column; */
     background-color: black;
     color: white;
+}
+nav{
+    height: 12vh;
+    width: 100vw;
+    font-size: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(58, 58, 58);
+}
+main{
+    height: 82vh;
+    width: 100vw;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.body{
+    border: 1px solid red;
+}
+input[type=number]{
+    display: block;
+    width: 30vw;
+    height: 10vh;
+    font-size: larger;
+    text-align: center;
+}
+#IND , #USD{
+    margin: 10% 0px ;
+}
+button{
+    border: none;
+    background-color: black;
 }

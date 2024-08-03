@@ -1,13 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Temperature Converter</title>
-</head>
-<body>
+  </head>
+  <body>
+    <nav>
+      <h1>Temperature Converter</h1>
+    </nav>
+    <main>
+      <div class="Section"> <!--! Celsius-->
+        <div class="input">
+          <input id="celsius" type="range" min="-89" max="100" value="0" class="TempInput rotate" />
+          <span>-</span>
+        </div>
+        <div class="TempInfo">
+          <label for="celsius"><img src="C.svg" /><span id="CValue">0</span></label>
+        </div>
+      </div>
 
+      <div class="Section"> <!--! fahrenheit --> 
+        <div class="input">
+          <input id="fahrenheit" type="range" min="-128" max="212" value="32" class="TempInput rotate" />
+          <span>-</span>
+        </div>
+        <div class="TempInfo">
+          <label for="fahrenheit"><img src="F.svg" /><span id="fValue">32</span></label>
+        </div>
+      </div>
+      
+      <div class="Section"> <!--! kelvin --> 
+        <div class="input">
+          <input id="kelvin" type="range" min="185" max="373" value="274" class="TempInput rotate" />
+          <span>-</span>
+        </div>
+        <div class="TempInfo">
+          <label for="kelvin"><img src="k.svg" /><span id="kValue">274</span></label>
+        </div>
+      </div>
+    </main>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
