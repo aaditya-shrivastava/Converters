@@ -7,16 +7,36 @@
     <title>Currency Converter</title>
   </head>
   <body>
-    <center>
-      <nav><h1>Currency Converter</h1></nav>
-      <main>
-        <div id="body">
-          <input id="USD" type="number" placeholder="USD"/>
-          <button id="swap"><img src="swap.svg" alt=""></button>
-          <input id="IND" type="number" placeholder="Indian"/>
-        </div>
-      </main>
-    </center>
+    <div class="body">
+      <form>
+        <main>
+          <nav><h1>Currency Converter</h1></nav>
+          <div class="main">
+            <input type="text" id="input" value="1" placeholder="Enter the amount"/>
+            <div class="selection">
+              <div class="from">
+                <h2>From</h2>
+                <div class="select">
+                  <img src="https://flagsapi.com/US/flat/64.png" />
+                  <select name="from" id="from"></select>
+                </div>
+              </div>
+              <img id="swap" src="swap.svg">
+              <div class="To" id="To">
+                <h2>To</h2>
+                <div class="select">
+                  <img src="https://flagsapi.com/IN/flat/64.png" />
+                  <select name="to" id="to"></select>
+                </div>
+              </div>
+            </div>
+            <span id="message">1 USD = 83.96 INR</span>
+          </div>
+          <button id="formBtn" type="submit">Get exchange rate</button>
+        </main>
+      </form>
+    </div>
+    <script src="currCode.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
